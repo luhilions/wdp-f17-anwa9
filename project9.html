@@ -6,40 +6,66 @@
   <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <title>CSS Table Styling</title>
-  </head>
+    <style>
+  
+  .text{
+    font-family: Verdana
+      }
+      .border{
+width: 350px;
+border-width: 4px;
+border-style: dotted;
+border-color: blue;
+      }
+      .hot{
+         text-color: red
+      }
+          .cold{
+          text-color: blue
+        }
+   
+      .days{
+        background-color: yellow
+      }
+      </head>
+    
 
   <body>
- <table border=1> <!--"Border" is blue dashed-->
+      <div class="text">
+<h2 style=green> Five Day Forecast </h2> 
+ <table>     <table border=1> <div class="border">
    
-   <tr> <!-- "Days" has a yellow background-->
+   <tr class=days> 
      <th> Monday</th>
      <th> Tuesday</th>
     <th> Wensday</th>
      <th> Thursday</th>
-    <th> Friday</th> <!--TGIF!!! Thank God its Friday-->
-     </tr> <!--Close Days-->
-  <tr> <!--"Temp 1" is red-->
+    <th> Friday</th> <!--TGIF!!!Thank God its Friday-->
+     </tr> 
+  <tr class="hot"
      <td> 68</td>
      <td> 68</td>
      <td> 70</td>
      <td>73</td>
       <td> 62</td>
-  </tr> <!-- Close "Temp 1"-->
-   <tr> <!--"Temp 2" is blue-->  
+ 
+      </tr> 
+   <tr class="cold">
      <td> 53</td>
      <td> 56 </td>
     <td> 52</td>
      <td> 58</td>
      <td>50</td>
-      </tr> <!-- Close "Temp 2"-->
-      <tr> <!-- "Forecast" has no styling-->
+      
+      </tr> 
+      <tr> 
      <td> Thunderstorms</td>
       <td> Partly Cloudy</td>   
        <td> Chance of Rain</td>  
         <td>Clear</td>
          <td> Windy</td>
-       </tr> <!-- Close Forecast-->
-  <tr> <!--"Images" are pictures, labeled for reuse-->  
+       </tr> 
+  <tr>
    <td> <img src="images/thunder-lightning.jpg" alt="thunderstorm" style="width:50px;height:33px;"> </td>
    <td> <img src="images/partly-cloudy.jpg" alt="cloudy field" style="width:50px;height:24px;"> </td>
   <td> <img src="images/chance-rain.jpg" alt="rain" style="width:50px;height:33px;"> </td>
@@ -47,9 +73,12 @@
 <td> <img src="images/windy.jpg" alt="dog in the wind" style="width:50px;height:29px;"></td>
                <!--Really Cute Dog:"Really! My hairdo took hours to get right"
                   Owner:"Aw isn't that cute" (takes picture)--> <!-- That is a photo script-->
-  </tr> <!--Close "Images"-->
-  </table>
-<!--Comments keep people sane, if you read the other comments you will understand... My orginizational genuis-->
-     </body>
+  </tr> 
+  </div>
+      </table>
+</div>
+      <!--Comments keep people sane, if you read the other comments you will understand... My orginizational genuis-->
+    
+      </body>
 
 </html>
