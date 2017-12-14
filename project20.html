@@ -4,16 +4,23 @@
       <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <title>Web Forms</title>
-  .feedback   {
+<style>  
+.feedback   {
 background-color:gray;
 border:2px;
-}
-
+z-index:1
+      }
+.text {
+  z-index:2
+      }
+</style>
 
    </head>
 
   <body>
-   <form class="feedback">
+   <div class="text">
+         <h3> Give Us Your Feedback</h3>
+        <form class="feedback">
 Full Name: <input type="text" size="20" name="firstname" /><br />
   Year: <br />
  <input type="radio" name="year" value="freshman" />freshman<br/>
