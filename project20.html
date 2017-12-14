@@ -5,10 +5,12 @@
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <title>Web Forms</title>
 <style>  
-.feedback   {
+      .feedback   {
 background-color:gray;
 padding: 25px;
 border:medium;
+border-style:solid;
+border-color: black;
 heigth: 525px;
 width: 275px;
 font-family: Tahoma;
@@ -17,7 +19,7 @@ text-size: 100px;
 
       }
 
-.text {
+      .text {
 font-family: Tahoma;
 z-index: 2;
       }
@@ -26,32 +28,32 @@ z-index: 2;
    </head>
 
   <body>
-   <div class="text">
+<div class="text">
          <h3> Give Us Your Feedback</h3>
-        <form class="feedback">
-Full Name: <input type="text" size="20" name="firstname" /><br />
+<form class="feedback">
+          Full Name: <input type="text" size="20" name="firstname" /><br />
   Year: <br />
- <input type="radio" name="year" value="freshman" />freshman<br/>
-<input type="radio" name="year" value="sophmore" />sophmore<br/>
-<input type="radio" name="year" value="junior" />junior<br/>
-<input type="radio" name="year" value="senior" />senior<br/>
+      <input type="radio" name="year" value="freshman" />freshman<br/>
+      <input type="radio" name="year" value="sophmore" />sophmore<br/>
+      <input type="radio" name="year" value="junior" />junior<br/>
+      <input type="radio" name="year" value="senior" />senior<br/>
   Activities:<br />                             
-<input type="checkbox" name="Activities" value="sports" />Sports<br />
-<input type="checkbox" name="Activities" value="music" />Music<br/>
-<input type="checkbox" name="Activities" value="theater" />Theater<br/>
-<input type="checkbox" name="Activities" value="other" />Other<br/>
+      <input type="checkbox" name="Activities" value="sports" />Sports<br />
+      <input type="checkbox" name="Activities" value="music" />Music<br/>
+      <input type="checkbox" name="Activities" value="theater" />Theater<br/>
+      <input type="checkbox" name="Activities" value="other" />Other<br/>
  Quater:<br />                            
-<select name="Fall">
-<option value="fall">Fall</option>
-<option value="winter">Winter</option>
-<option value="spring">Spring</option>
-<option value="summer">Summer</option>
-</select>
-   Comments:<br />
-<textarea name="more" rows="8" cols="30">
-Enter Feedback Here.
-</textarea>
-    <input type="submit" value="Click Here to Submit"
+   <select name="Fall">
+      <option value="fall">Fall</option>
+      <option value="winter">Winter</option>
+      <option value="spring">Spring</option>
+      <option value="summer">Summer</option>
+</select> 
+ Comments:<br />
+     <textarea name="more" rows="8" cols="30">
+      Enter Feedback Here.
+     </textarea>
+ <input type="submit" value="Click Here to Submit"
     </form>
   
   </body>
